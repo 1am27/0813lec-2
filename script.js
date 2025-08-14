@@ -27,7 +27,7 @@ const app = new Vue({
       };
       
       //INSERT用のAPIを呼び出し
-      const response = await axios.post('https://m3h-murakami-functionapp.azurewebsites.net/api/INSERT?',param);
+      const response = await axios.post('https://m3h-murakami-20250813functions.azurewebsites.net/api/INSERT?',param);
       
       //結果をコンソールに出力
       console.log(response.data);
@@ -36,7 +36,7 @@ const app = new Vue({
     // データベースからデータを取得する関数
     readData: async function() {
       //SELECT用のAPIを呼び出し      
-      const response = await axios.get('https://m3h-murakami-functionapp.azurewebsites.net/api/SELECT?');
+      const response = await axios.get('https://m3h-murakami-20250813functions.azurewebsites.net/api/SELECT?');
       
       //結果をコンソールに出力
       console.log(response.data);
